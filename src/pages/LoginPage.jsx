@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Eye, EyeOff, Lock, User } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
+import { toast } from "../components/ui/sonner";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -43,10 +44,14 @@ const LoginPage = () => {
         const success = await login(username, password);
         
         if (success) {
+          toast.success("Login successful!");
           navigate(from);
+        } else {
+          toast.error("Invalid credentials. Use 'admin' and 'password123'");
         }
       } catch (error) {
         console.error("Login error:", error);
+        toast.error("Login failed. Please try again.");
       } finally {
         setIsSubmitting(false);
       }

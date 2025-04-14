@@ -14,7 +14,12 @@ export const AuthProvider = ({ children }) => {
     // Check if user is logged in from localStorage
     const storedUser = localStorage.getItem("user");
     if (storedUser) {
-      setUser(JSON.parse(storedUser));
+      try {
+        setUser(JSON.parse(storedUser));
+      } catch (err) {
+        console.error("Failed to parse stored user:", err);
+        localStorage.removeItem("user");
+      }
     }
     setIsLoading(false);
   }, []);
@@ -25,10 +30,9 @@ export const AuthProvider = ({ children }) => {
       const userData = { username };
       setUser(userData);
       localStorage.setItem("user", JSON.stringify(userData));
-      toast.success("Login successful!");
       return true;
     } else {
-      toast.error("Invalid credentials");
+      toast.error("Invalid credentials. Use username 'admin' and password 'password123'");
       return false;
     }
   };
