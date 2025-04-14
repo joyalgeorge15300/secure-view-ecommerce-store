@@ -71,11 +71,6 @@ const LoginPage = () => {
               create a new account
             </Link>
           </p>
-          <div className="mt-4 bg-yellow-50 border border-yellow-100 rounded-md p-4">
-            <p className="text-sm text-yellow-800">
-              <strong>Demo Credentials:</strong> Use username "admin" and password "password123" to login.
-            </p>
-          </div>
         </div>
         <div className="mt-8 bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form className="space-y-6" onSubmit={handleSubmit}>

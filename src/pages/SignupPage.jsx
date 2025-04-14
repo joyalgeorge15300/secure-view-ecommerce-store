@@ -92,11 +92,6 @@ const SignupPage = () => {
               sign in to your existing account
             </Link>
           </p>
-          <div className="mt-4 bg-yellow-50 border border-yellow-100 rounded-md p-4">
-            <p className="text-sm text-yellow-800">
-              <strong>Demo Note:</strong> This is a demo application. New account registration is simulated. Please use the demo credentials from the login page.
-            </p>
-          </div>
         </div>
         <div className="mt-8 bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form className="space-y-6" onSubmit={handleSubmit}>
