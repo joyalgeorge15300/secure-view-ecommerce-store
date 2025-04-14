@@ -47,7 +47,7 @@ const LoginPage = () => {
           toast.success("Login successful!");
           navigate(from);
         } else {
-          toast.error("Invalid credentials. Use 'admin' and 'password123'");
+          toast.error("Invalid credentials");
         }
       } catch (error) {
         console.error("Login error:", error);

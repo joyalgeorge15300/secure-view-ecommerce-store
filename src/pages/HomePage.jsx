@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ShieldCheck, Eye, Lock, Clock } from "lucide-react";
+import { ShieldCheck, Eye, Lock, Clock, Cctv } from "lucide-react";
 
 const HomePage = () => {
   return (
@@ -11,7 +11,7 @@ const HomePage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('https://images.unsplash.com/photo-1622382719615-f3a5e545e8a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1580745294621-4ec2daa4eb4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
             opacity: 0.4
           }}
         ></div>
@@ -79,6 +79,53 @@ const HomePage = () => {
         </div>
       </section>
       
+      {/* Featured Products */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-[#1a2b4d] mb-4">
+              Featured Security Solutions
+            </h2>
+            <p className="max-w-3xl mx-auto text-gray-600">
+              Browse our most popular surveillance products, trusted by homeowners and businesses alike.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ProductCard
+              image="https://images.unsplash.com/photo-1581893105636-c6a8ea54c743?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              title="HD Dome Camera"
+              price="$89.99"
+              description="Indoor surveillance with 1080p resolution and night vision."
+              link="/products/1"
+            />
+            <ProductCard
+              image="https://images.unsplash.com/photo-1610641894769-7d037638c104?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              title="4K Bullet Camera"
+              price="$129.99"
+              description="Weatherproof outdoor camera with 4K resolution and 50m night vision."
+              link="/products/2"
+            />
+            <ProductCard
+              image="https://images.unsplash.com/photo-1580745294621-4ec2daa4eb4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              title="Pan-Tilt-Zoom Camera"
+              price="$199.99"
+              description="360° coverage with 25x optical zoom and auto-tracking."
+              link="/products/3"
+            />
+          </div>
+          
+          <div className="text-center mt-10">
+            <Link 
+              to="/products" 
+              className="px-6 py-3 bg-[#1a2b4d] text-white rounded-md font-medium hover:bg-[#00a8a8] transition-colors inline-block"
+            >
+              View All Products
+            </Link>
+          </div>
+        </div>
+      </section>
+      
       {/* CTA Section */}
       <section className="bg-gray-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -114,6 +161,34 @@ const FeatureCard = ({ icon, title, description }) => {
       </div>
       <h3 className="text-xl font-semibold text-[#1a2b4d] mb-2 text-center">{title}</h3>
       <p className="text-gray-600 text-center">{description}</p>
+    </div>
+  );
+};
+
+const ProductCard = ({ image, title, price, description, link }) => {
+  return (
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+      <div className="h-48 overflow-hidden">
+        <img 
+          src={image} 
+          alt={title} 
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      <div className="p-5">
+        <h3 className="text-lg font-semibold text-[#1a2b4d] mb-1">{title}</h3>
+        <p className="text-[#00a8a8] font-medium mb-2">{price}</p>
+        <p className="text-gray-600 mb-4 text-sm">{description}</p>
+        <Link 
+          to={link}
+          className="text-[#1a2b4d] font-medium hover:text-[#00a8a8] transition-colors inline-flex items-center"
+        >
+          View Details
+          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
+      </div>
     </div>
   );
 };

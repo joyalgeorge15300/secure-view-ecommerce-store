@@ -4,7 +4,7 @@ export const products = [
     id: 1,
     name: "HD Dome Camera",
     price: 89.99,
-    image: "https://images.unsplash.com/photo-1581319415453-aabd9a5187a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1581893105636-c6a8ea54c743?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     description: "High-definition dome camera with night vision and 1080p resolution. Perfect for indoor surveillance with a 120° viewing angle and motion detection capabilities. This model connects seamlessly with our SecureView app and supports cloud storage for footage.",
     features: [
       "1080p HD resolution",
@@ -54,7 +54,7 @@ export const products = [
     id: 3,
     name: "Pan-Tilt-Zoom Camera",
     price: 199.99,
-    image: "https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1580745294621-4ec2daa4eb4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     description: "Advanced PTZ camera with 25x optical zoom and 360° rotation. Control remotely via our SecureView app and set automated patrol routes. Features include auto-tracking of moving objects and two-way audio communication.",
     features: [
       "25x optical zoom",
@@ -79,7 +79,7 @@ export const products = [
     id: 4,
     name: "8-Channel NVR System",
     price: 349.99,
-    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1605514449852-74d9e6159046?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     description: "Complete 8-channel Network Video Recorder with 2TB storage and AI-powered detection. This system supports up to 8 IP cameras with person/vehicle detection and includes remote viewing capabilities through our SecureView app.",
     features: [
       "8-channel recording",
@@ -104,7 +104,7 @@ export const products = [
     id: 5,
     name: "Wireless Home Security Kit",
     price: 499.99,
-    image: "https://images.unsplash.com/photo-1555878426-effa45443ef7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1582139329536-e7284fece509?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     description: "Complete wireless home security kit including 4 HD cameras, wireless hub, and door/window sensors. This all-in-one solution offers easy DIY installation and battery backup for continuous protection even during power outages.",
     features: [
       "4 wireless HD cameras",
@@ -129,7 +129,7 @@ export const products = [
     id: 6,
     name: "Hidden Camera Detector",
     price: 69.99,
-    image: "https://images.unsplash.com/photo-1533234427049-9e9bb093186d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1517482359597-b3f5ba0d52ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     description: "Professional grade hidden camera detector to protect your privacy. Detects wireless cameras, bugs, and GPS trackers with RF signal detection and lens finder capabilities.",
     features: [
       "RF signal detection",
@@ -154,7 +154,7 @@ export const products = [
     id: 7,
     name: "Video Doorbell",
     price: 149.99,
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1558000143-a78f8299c40b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     description: "Smart video doorbell with HD camera, two-way audio, and motion detection. Get instant alerts when visitors arrive and speak with them from anywhere using our SecureView app.",
     features: [
       "1080p HD video",
@@ -179,7 +179,7 @@ export const products = [
     id: 8,
     name: "Solar Security Camera",
     price: 179.99,
-    image: "https://images.unsplash.com/photo-1585916900058-6ff4226b0ab2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1575975243243-5462a2054867?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     description: "Eco-friendly solar-powered security camera with wireless connectivity and local storage. This maintenance-free solution provides continuous surveillance without the need for power cables or frequent battery changes.",
     features: [
       "Solar powered",

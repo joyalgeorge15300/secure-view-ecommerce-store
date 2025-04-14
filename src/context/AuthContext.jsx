@@ -32,14 +32,12 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem("user", JSON.stringify(userData));
       return true;
     } else {
-      toast.error("Invalid credentials. Use username 'admin' and password 'password123'");
       return false;
     }
   };
 
   const signup = (username, password) => {
     // For demo purposes, we'll just use the hardcoded admin account
-    toast.info("This is a demo. Please use 'admin' and 'password123' to login.");
     return false;
   };
 
